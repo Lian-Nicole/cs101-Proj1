@@ -1,0 +1,21 @@
+#include <bits/stdc++.h> 
+#include <iostream>
+using namespace std;  
+int divide(int dividend, int divisor) { 
+int quotient = 0; 
+while (dividend >= divisor) { 
+	dividend -= divisor; 
+	++quotient; 
+} 
+return quotient; 
+if(dividend==divisor)return 1;
+if(dividend==0)return 0;
+} 
+int main() { 
+int a = 0;
+int b = 0; 
+cin>>a;
+cin>>b;
+cout << divide(a, b) << "\n"; 
+return 0; 
+} 
